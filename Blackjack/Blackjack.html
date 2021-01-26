@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blackjack</title>
+        <link rel="stylesheet" href="Blackjack.css">
+        <script src="Blackjack.js" defer></script>
+    </head>
+    <body>
+        <!--title-->
+        <div class="title">
+            <h1>BlackJack</h1>
+        </div>
+
+        <!--Rules-->
+        <div class="rules" id="rules">
+            Blackjack starts with players making bets.<br>
+
+            Dealer deals 2 cards to the players and two to himself (1 card face up, the other face down).<br>
+
+            Blackjack card values: All cards count their face value in blackjack. Picture cards count as 10 and the ace can count as either 1 or 11. Card suits have no meaning in blackjack. The total of any hand is the sum of the card values in the hand<br>
+
+            Players must decide whether to hit(ask for another card) or stand(not ask for another card).<br>
+
+            The dealer acts last and must hit on 16 or less and stand on 17 through 21.<br>
+
+            Players win when their hand totals higher than dealer’s hand, or they have 21 or less when the dealer busts (i.e., exceeds 21).<br>
+        </div>
+         
+        <!--Play button-->
+        <div class="play_btn" id="play_btn">
+            <button class="play" id="play" onclick=startgame()>Play</button>
+        </div>
+
+        <!--Playingboard-->
+        <div class="content" id="content">
+          <div class="playingboard">
+
+              <!--Player-->
+             <div class="player">
+                <div class="player_score">
+                    <div class="score_player" id="score_player">
+                        
+                    </div>
+                </div>
+                <div class="cards_player" id="cards_player">
+ 
+                </div>
+                
+             </div>
+             <!--dealer-->
+             <div class="dealer">
+                <div class="dealer_score">
+                    <div class="score_dealer" id="score_dealer">
+                        
+                    </div>
+                </div>
+                <div class="cards_dealer" id="cards_dealer">
+
+                </div>
+                
+             </div>
+          </div>
+        </div>
+        
+        <!--Buttons-->
+        <div class="cuz_what_not" id="cuz_what_not">
+            <div class="board_of_btns">
+                <div class="buttons">
+                    <button class="hit_btn" id="hit_btn" onclick=hit()>Hit</button>
+                    <button class="stand_btn" id="stand_btn" onclick=stand()>Stand</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result" id="result">
+            
+        </div>
+    </body>
+</html>

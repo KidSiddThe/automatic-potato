@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('back.png');
+    color: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules {
+    display: flex;
+    justify-content: center;
+}
+
+.play_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.play {
+    padding: 5px;
+    font-size: 18px;
+    border: solid black;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.playingboard {
+    width: 1205px;
+    height: 500px;
+    background-color: green;
+    border: solid black;
+}
+
+.dealer {
+    width: 600px;
+    height: 500px;
+    float: left;
+    border-bottom: solid black;
+}
+
+.dealer_score {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    border-bottom: solid black;
+}
+
+.score_dealer {
+    font-size: 25px;  
+    display: flex;
+    justify-content: center;
+    padding-top: 22px;
+}
+
+.cards_dealer {
+    width: 600px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.player {
+    width: 600px;
+    height: 500px;
+    float: left;
+    border-right: solid black;
+    border-bottom: solid black;
+}
+
+.player_score {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    border-bottom: solid black;
+}
+
+.score_player {
+    font-size: 25px;  
+    display: flex;
+    justify-content: center;
+    padding-top: 22px;
+}    
+
+.cards_player {
+    height: 420px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cuz_what_not {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.board_of_btns {
+    height: 100px;
+    width: 1205px;
+    background-color: green;
+    border-left: solid black;
+    border-bottom: solid black;
+    border-right: solid black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hit_btn {
+    margin-top: 29.5px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    background-color: #FFCD46;
+}
+
+.stand_btn {
+    margin-top: 29.25px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    background-color: #4C8BF5;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-left: 65px;
+    padding-top: 10px;
+    width: 1205px;
+    font-size: 20px;
+}
